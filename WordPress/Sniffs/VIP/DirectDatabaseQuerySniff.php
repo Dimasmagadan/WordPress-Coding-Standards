@@ -236,7 +236,7 @@ class DirectDatabaseQuerySniff extends Sniff {
 		}
 
 		if ( $this->customCacheGetFunctions !== $this->addedCustomFunctions['cacheget'] ) {
-			$this->cacheGetFunctions = $this->merge_custom_array(
+			$this->cacheGetFunctions                = $this->merge_custom_array(
 				$this->customCacheGetFunctions,
 				$this->cacheGetFunctions
 			);
@@ -244,7 +244,7 @@ class DirectDatabaseQuerySniff extends Sniff {
 		}
 
 		if ( $this->customCacheSetFunctions !== $this->addedCustomFunctions['cacheset'] ) {
-			$this->cacheSetFunctions = $this->merge_custom_array(
+			$this->cacheSetFunctions                = $this->merge_custom_array(
 				$this->customCacheSetFunctions,
 				$this->cacheSetFunctions
 			);
@@ -252,7 +252,7 @@ class DirectDatabaseQuerySniff extends Sniff {
 		}
 
 		if ( $this->customCacheDeleteFunctions !== $this->addedCustomFunctions['cachedelete'] ) {
-			$this->cacheDeleteFunctions = $this->merge_custom_array(
+			$this->cacheDeleteFunctions                = $this->merge_custom_array(
 				$this->customCacheDeleteFunctions,
 				$this->cacheDeleteFunctions
 			);

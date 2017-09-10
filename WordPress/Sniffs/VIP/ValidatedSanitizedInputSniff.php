@@ -163,7 +163,7 @@ class ValidatedSanitizedInputSniff extends Sniff {
 	 */
 	protected function mergeFunctionLists() {
 		if ( $this->customSanitizingFunctions !== $this->addedCustomFunctions['sanitize'] ) {
-			$this->sanitizingFunctions = $this->merge_custom_array(
+			$this->sanitizingFunctions              = $this->merge_custom_array(
 				$this->customSanitizingFunctions,
 				$this->sanitizingFunctions
 			);
@@ -171,7 +171,7 @@ class ValidatedSanitizedInputSniff extends Sniff {
 		}
 
 		if ( $this->customUnslashingSanitizingFunctions !== $this->addedCustomFunctions['unslashsanitize'] ) {
-			$this->unslashingSanitizingFunctions = $this->merge_custom_array(
+			$this->unslashingSanitizingFunctions           = $this->merge_custom_array(
 				$this->customUnslashingSanitizingFunctions,
 				$this->unslashingSanitizingFunctions
 			);
